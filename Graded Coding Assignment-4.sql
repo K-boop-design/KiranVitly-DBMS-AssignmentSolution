@@ -74,7 +74,7 @@ select Passenger_name,Price from (select PASSENGER.Passenger_name,PASSENGER.Boar
 from PASSENGER
 left join PRICE
 on PASSENGER.Bus_Type=PRICE.Bus_Type
-where PASSENGER.Distance=PRICE.Distance && PASSENGER.Distance=1000)as Travel_Database 
+where PASSENGER.Distance=PRICE.Distance && PASSENGER.Distance=1000 && PASSENGER.Bus_Type='Sitting')as Travel_Database 
 
 /* 8) What will be the Sitting and Sleeper bus charge for Pallavi to travel from Bangalore to 
 Panaji?  */
